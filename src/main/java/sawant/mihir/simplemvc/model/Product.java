@@ -5,7 +5,7 @@ public class Product {
     private float qty;
     private double cost;
 
-    private Type type;
+    private String type;
 
     public Product() {
     }
@@ -34,11 +34,11 @@ public class Product {
         this.cost = cost;
     }
 
-    public Type getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(String type) {
         this.type = type;
     }
 
@@ -48,7 +48,7 @@ public class Product {
                 "name='" + name + '\'' +
                 ", qty=" + qty +
                 ", cost=" + cost +
-                ", type=" + type +
+                ", type='" + type + '\'' +
                 '}';
     }
 }
